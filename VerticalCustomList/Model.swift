@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct VerticalCellViewModel: Identifiable {
+    let id = UUID().uuidString
+    let horizontalCellViewModels: [HorizontalCellViewModel]
+}
+
+struct HorizontalCellViewModel: Identifiable {
+    let id = UUID().uuidString
+    let number: Int
+}
